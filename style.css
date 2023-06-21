@@ -1,0 +1,140 @@
+body {
+  background-color: #49c6ec;
+  /* background-color: #171818; */
+  /* color: #8fdcf3; */
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+  font-weight: 500;
+}
+
+#todo_form {
+  display: flex;
+  gap: 5px;
+}
+
+#new_task_input {
+  flex: 1 1 0%;
+  background-color: #8fdcf3;
+  padding: 1rem;
+  font-size: 1.25rem;
+
+  background: rgba(255, 255, 255, 0.342);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#new_task_submit {
+  width: 170px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(248, 132, 190, 0.637),
+    rgba(0, 255, 200, 0.397)
+  );
+  transition: 0.4s;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#new_task_submit:hover {
+  filter: contrast(1.5);
+}
+#new_task_submit.active {
+  transform: scale(0.9);
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todoList {
+  padding: 1rem;
+}
+.todoList h2 {
+  font-size: 1.9rem;
+  color: #494b4b;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #edf0f0c0;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.content {
+  width: 78%;
+}
+.content .text {
+  color: black;
+  font-size: 1.25rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.content .text:not(:read-only) {
+  color: rgb(106, 154, 243);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.actions button {
+  width: 70px;
+  border: 2px solid #49c6ec;
+  background-color: #8fdcf381;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+.delete {
+  color: crimson;
+}
+.edit {
+  color: rgb(2, 185, 57);
+}
+.actions button:hover {
+}
